@@ -3,7 +3,7 @@
     margin: 0%;
 }
 body {
-    background-color: hsla(0, 0%, 100%, 0.829);
+    background-color: #d9eed9;
     font-family: Arial, sans-serif;
 }
 header {
@@ -16,7 +16,7 @@ header h1 {
 }
 nav ul li a {
     text-decoration: none;
-    color: hsl(138, 91%, 29%);
+    color: #4CAF50;
 }
 nav ul li {
     margin: 0px 15px; 
@@ -74,7 +74,7 @@ main > h2 {
     margin-bottom: 20px;
 }
 footer {
-    background-color: hsl(105, 76%, 16%);
+    background-color: #124314;
     justify-content: center;
     display: flex;
     margin-top: 180px;
