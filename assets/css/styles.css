@@ -1,0 +1,140 @@
+/* Mobile-first styles (default) */
+* {
+    margin: 0%;
+}
+body {
+    background-color: hsla(0, 0%, 100%, 0.829);
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: hsl(137, 63%, 90%);
+    justify-content: center;
+    display: flex;
+}
+header h1 {
+    padding: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: hsl(138, 91%, 29%);
+}
+nav ul li {
+    margin: 0px 15px; /* Adjusted for smaller screens */
+}
+nav ul {
+    list-style-type: none;
+    padding: 20px 0px;
+    justify-content: center;
+    display: flex;
+}
+img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    max-width: 100%;
+}
+.product {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 100%; /* Make products flexible */
+    background-color: #fff;
+    margin: 10px 0;
+}
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusted gap for smaller screens */
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+main h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.product p.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+}
+.product img {
+    max-width: auto;
+    height: 60%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.middle img {
+    max-width: auto;
+    height: 40%;
+}
+main > h2 {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: hsl(105, 76%, 16%);
+    justify-content: center;
+    display: flex;
+    margin-top: 180px;
+    padding: 15px;
+}
+footer p {
+    color: #ffffffd3;
+}
+.product h2 {
+    margin-top: 0;
+}
+
+/* Media Queries for larger screens */
+
+/* Tablet and above */
+@media (min-width: 600px) {
+    .product-list {
+        gap: 30px;
+    }
+
+    .product {
+        width: 220px; /* Adjust product width for medium screens */
+    }
+
+    header h1 {
+        font-size: 2em; /* Increase header size for medium screens */
+    }
+
+    nav ul li {
+        margin: 0px 20px;
+    }
+
+    main > h2 {
+        margin-left: 100px; /* Adjust section heading margins */
+    }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+    .product-list {
+        gap: 50px; /* Increase gap for desktop */
+    }
+
+    .product {
+        width: 250px; /* Set fixed product width for large screens */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Further increase header size for large screens */
+    }
+
+    nav ul li {
+        margin: 0px 25px;
+    }
+
+    main > h2 {
+        margin-left: 200px;
+    }
+
+    footer {
+        padding: 25px; /* More padding for desktop */
+    }
+}
